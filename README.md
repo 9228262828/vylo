@@ -1,48 +1,36 @@
-# VYLO — Flutter lib
+# VYLO GitHub Pages
 
-Package: `com.vylo.arcade`
-
-Add to `pubspec.yaml`:
-
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  shared_preferences: ^2.3.2
-```
-
-Then run:
-
-```bash
-flutter pub get
-flutter run
-```
-
-## Gameplay
-VYLO is a lightweight offline reflex game. Incoming color orbs approach the center from four lanes. The player rotates a four-color core left or right. At impact, the sector facing the orb must match its color.
+Game: **VYLO**  
+Package: `com.vylo.arcade`  
+Contact: `adpainting1979@gmail.com`
 
 ## Included
-- Classic mode: 3 lives
-- Endless mode: one miss ends the run
-- Daily mode: deterministic daily sequence
-- Progressive speed and spawn difficulty
-- Combo system
-- Bonus orbs
-- Score and best score persistence
-- Bolts / local currency
-- Theme unlock shop
-- 4 visual themes
+- `docs/index.html`
+- `docs/privacy.html`
+- `docs/terms.html`
+- `docs/style.css`
+
+## GitHub Pages
+1. Upload the `docs` folder to the repository.
+2. Open **Settings → Pages**.
+3. Choose **Deploy from a branch**.
+4. Select the branch containing these files.
+5. Choose `/docs`.
+6. Save.
+
+## Privacy release checklist
+The current policy is written for the generated VYLO core implementation:
+- Offline core gameplay
+- No login/account
+- Local SharedPreferences progress
+- Classic, Endless and Daily scores
+- Best combo / gameplay statistics
+- Bolts
+- Theme unlocks and selected theme
 - Achievements
-- Statistics
-- Sound toggle
-- Haptics toggle
-- Pause / resume
-- Safe exit confirmation
-- Run results
-- Full local progress persistence with SharedPreferences
-- Reset all progress
+- Sound and haptic preferences
+- Local progress reset
+- No current ads/analytics/tracking SDK requirement
+- No current camera, microphone, contacts or location requirement
 
-## Visual identity
-Premium neon-arcade direction: deep navy/black backgrounds with Electric Cyan, Vivid Purple, Hot Orange and Acid Lime. Gameplay uses a custom-painted central color core, orbit lanes, glow particles, feedback flashes, and large tactile left/right controls.
-
-No network, login, server, or external game engine is required by this implementation.
+Before every store release, compare the policy against the exact shipping build and Google Play Data safety declarations. Update the policy first if you add any data-collecting SDK or online feature.
